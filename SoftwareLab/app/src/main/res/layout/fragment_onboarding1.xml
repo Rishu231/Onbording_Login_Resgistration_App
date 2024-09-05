@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5EA25F">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding1_svg"
+        android:background="#5EA25F" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/top_corners_curved">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quality"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textSize="24sp"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Sell your farm fresh products directly to consumers, cutting out the middleman and reducing emissions of the global supply chain."
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/dotimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/onboarding_dot1" />
+
+        <Button
+            android:id="@+id/buttonJoin1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="90dp"
+            android:backgroundTint="#5EA25F"
+            android:text="Join the movement!" />
+
+        <TextView
+            android:id="@+id/buttonLogin1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

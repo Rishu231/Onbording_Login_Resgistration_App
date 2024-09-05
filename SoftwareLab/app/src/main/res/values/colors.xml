@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#418BFF</color>
+    <color name="colorPrimaryDark">#1b74ff</color>
+    <color name="colorAccent">#418BFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorGrey">#c3c3c3</color>
+    <color name="colorBlue">#33ACFF</color>
+    <color name="background_task_header">#1a1b25</color>
+    <color name="background_splash">#3F97FF</color>
+    <color name="background">#dddddd</color>
+    <color name="transparent">#0000</color>
+    <color name="red">#FF0000</color>
+    <color name="freshchat_notification_accent_color">#4285F4</color>
+    <color name="standard_blue_color">#4d59ec</color>
+    <color name="standard_placeholder_color">#8f989f</color>
+    <color name="job_form_background">#242428</color>
+    <color name="job_form_grey_text">#4cffffff</color>
+    <color name="statusbar">#EBEBEB</color>
+    <color name="white">#ffffff</color>
+
+
+    <!--    Design System Colors-->
+
+    <!--    Primary Brand Colors-->
+    <color name="primary1">#1B74FF</color>
+    <color name="primary2">#418BFF</color>
+    <color name="primary3">#80B2FF</color>
+    <color name="primary4">#C0D9FF</color>
+    <color name="primary5">#E6F0FF</color>
+
+    <color name="primary1_15per">#281B74FF</color>
+    <color name="primary5_25per">#40E6F0FF</color>
+    <color name="primary5_60per">#99e6f0ff</color>
+    <color name="primary5_90per">#E6E6F0FF</color>
+    <color name="primary3_60per">#9980B2FF</color>
+    <color name="primary5_70per">#B3E6F0FF</color>
+    <color name="primary5_40per">#66E6F0FF</color>
+    <color name="primary4_50per">#80C0D9FF</color>
+    <color name="primary4_20per">#33C0D9FF</color>
+
+    <!--    Secondary Brand Colors-->
+    <color name="secondary1">#FFA61B</color>
+    <color name="secondary2">#FFB541</color>
+    <color name="secondary3">#FFCD80</color>
+    <color name="secondary4">#FFE6C0</color>
+    <color name="secondary5">#FFF5E6</color>
+
+    <color name="secondary1_15per">#26FFA61B</color>
+    <color name="secondary1_20per">#33ffcb8e</color>
+    <color name="secondary2_15per">#26FFB541</color>
+    <color name="secondary4_40per">#66FFE6C0</color>
+    <color name="secondary4_50per">#80FFE6C0</color>
+    <color name="secondary5_20per">#33FFF5E6</color>
+    <color name="secondary5_50per">#80FFF5E6</color>
+    <color name="secondary5_60per">#99FFF5E6</color>
+
+    <!--    Inks-->
+    <color name="ink1">#2C323A</color>
+    <color name="ink2">#414C5B</color>
+    <color name="ink3">#5D697A</color>
+    <color name="ink4">#929DAD</color>
+    <color name="ink5">#FFFFFF</color>
+    <color name="ink6">#F1F1F1</color>
+
+    <color name="ink3_12per">#1E5D697A</color>
+    <color name="ink4_35per">#59929DAD</color>
+    <color name="ink1_30per">#4D2C323A</color>
+    <color name="ink4_5per">#0D929DAD</color>
+    <color name="ink4_10per">#1A929DAD</color>
+    <color name="ink4_30per">#4D929DAD</color>
+    <color name="ink4_70per">#b3929DAD</color>
+    <color name="ink4_80per">#CC929DAD</color>
+    <color name="ink5_50per">#80FFFFFF</color>
+    <color name="ink5_90per">#E6FFFFFF</color>
+    <color name="ink5_40per">#66FFFFFF</color>
+    <color name="ink1_70per">#B32C323A</color>
+    <color name="ink1_90per">#E62C323A</color>
+    <color name="ink5_4per">#0AFFFFFF</color>
+    <color name="ink5_20per">#33FFFFFF</color>
+    <color name="ink4_20per">#33929DAD</color>
+    <color name="ink2_10per">#1A414C5B</color>
+
+
+    <!--    Spaces-->
+    <color name="space1">#FFFBF6</color>
+    <color name="space2">#FFF1DC</color>
+    <color name="space3">#FFECD0</color>
+    <color name="space4">#FFE2B7</color>
+    <color name="space5">#FFFFFF</color>
+    <color name="space6">#FFBC53</color>
+
+    <!--    Success-->
+    <color name="success1">#1CCD65</color>
+    <color name="success2">#64DB95</color>
+    <color name="success3">#98E7B9</color>
+    <color name="success4">#CBF3DC</color>
+    <color name="success5">#E8FAEF</color>
+    <color name="success6">#37b087</color>
+
+
+    <color name="success2_11per">#1c64DB95</color>
+
+    <!--    Warning-->
+    <color name="warning1">#FE4721</color>
+    <color name="warning2">#FD8167</color>
+    <color name="warning3">#FEAB9A</color>
+    <color name="warning4">#FED5CC</color>
+    <color name="warning5">#FFEDE9</color>
+
+    <!--    Accent-->
+    <color name="accent1">#81C3C8</color>
+    <color name="accent2">#54B5A0</color>
+    <color name="accent3">#97AD99</color>
+    <color name="accent4">#E19F88</color>
+    <color name="accent5">#E1B288</color>
+    <color name="accent6">#7FBD6B</color>
+    <color name="accent7">#EDA855</color>
+    <color name="accent8">#D590FE</color>
+    <color name="accent9">#897ADF</color>
+    <color name="accent10">#AC7DF9</color>
+
+    <color name="accent1_15per">#2681C3C8</color>
+    <color name="accent8_15per">#26d590fe</color>
+    <color name="accent7_15per">#26EDA855</color>
+    <color name="accent10_20per">#33ac7df9</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

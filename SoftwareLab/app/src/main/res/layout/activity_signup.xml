@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Signup.SignupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Signup_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="FarmerEats"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/signupPage1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Signup 1 of 4"
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+            <TextView
+                android:id="@+id/tvWelcomeBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signupPage1text" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcomeBack">
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/social_button_background"
+                    android:contentDescription="Google login"
+                    android:src="@drawable/google_svg" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/social_button_background"
+                    android:contentDescription="Apple login"
+                    android:src="@drawable/apple_svg" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/social_button_background"
+                    android:contentDescription="Facebook login"
+                    android:src="@drawable/facebook_svg" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOrLoginWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or signup with"
+                android:textColor="@color/ink1_30per"
+                android:textSize="12sp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/user_svg"
+                android:drawablePadding="8dp"
+                android:hint="  Full Name"
+                android:padding="16dp"
+                android:textSize="14dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrLoginWith" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/attherate"
+                android:drawablePadding="8dp"
+                android:hint="  Email Address"
+                android:padding="16dp"
+                android:textSize="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/phone_svg"
+                android:drawablePadding="8dp"
+                android:hint="  Phone Number"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textSize="14dp"
+                android:maxLength="8"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/lock_svg"
+                android:drawablePadding="8dp"
+                android:hint="   Password"
+                android:padding="16dp"
+                android:textSize="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+            <EditText
+                android:id="@+id/etPasswordConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/lock_svg"
+                android:drawablePadding="8dp"
+                android:hint="   Password"
+                android:padding="16dp"
+                android:textSize="14dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnfooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/buttonLogin1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/Login"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnContinue1"
+                android:layout_width="226dp"
+                android:layout_height="53dp"
+                android:backgroundTint="#D5715B"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/farm_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/farmLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="FarmerEats"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Signup 2 of 4"
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Farm Info"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etBname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/business_tag_svg"
+                android:drawablePadding="8dp"
+                android:hint="  Business Name"
+                android:padding="16dp"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrLoginWith" />
+
+
+            <EditText
+                android:id="@+id/etInformalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/imoji_svg"
+                android:drawablePadding="8dp"
+                android:hint="  Informal Name"
+                android:padding="16dp"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <EditText
+                android:id="@+id/etStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/street_svg"
+                android:drawablePadding="8dp"
+                android:hint="  Street Address"
+                android:padding="16dp"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_background"
+                android:drawableStart="@drawable/city_svg"
+                android:drawablePadding="8dp"
+                android:hint="  City"
+                android:padding="16dp"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <Spinner
+                    android:id="@+id/etState"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="  State"
+                    android:textSize="14dp"
+                    android:background="@drawable/input_background"
+                    android:spinnerStyle="@style/CustomSpinner"/>
+
+                <EditText
+                    android:id="@+id/etZipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawablePadding="8dp"
+                    android:hint="  Enter Zipcode"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnfooterfarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/buttonLogin1farm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/left_arrow_svg"/>
+
+            <Button
+                android:id="@+id/btnContinue1farm"
+                android:layout_width="140dp"
+                android:layout_height="53dp"
+                android:backgroundTint="#D5715B"
+                android:text="Continue"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verification_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/verificationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="FarmerEats"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Signup 3 of 4"
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Verification"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Attached proof of Department of Agriculture registrations i.e. Florida Fresh, USDA Approved, USDA Organic"
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attach proof of registration"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_com_profile_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/circle_background"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:src="@drawable/ellipse_svg"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/auth_profile_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/camera_svg"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/files_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_background"
+                android:textColor="@color/colorBlack"
+                android:drawableStart="@drawable/apple_svg"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:visibility="gone">
+
+            <TextView
+                android:id="@+id/file_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="usda_registration.pdf"
+                android:padding="16dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:drawableEnd="@drawable/cross_svg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnFooterVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/buttonBackVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/left_arrow_svg"/>
+
+            <Button
+                android:id="@+id/btnSubmitVerification"
+                android:layout_width="140dp"
+                android:layout_height="53dp"
+                android:backgroundTint="#D5715B"
+                android:text="Submit"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Business_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/BusinessLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="FarmerEats"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Signup 4 of 4"
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Business Hours"
+                android:textColor="@color/colorBlack"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Choose the hours your farm is open for pickups. This will allow customers to order deliveries."
+                android:textColor="@color/ink1_30per"
+                android:textSize="14sp" />
+
+            <GridLayout
+                android:id="@+id/days_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:rowCount="1"
+                android:columnCount="9">
+
+                <TextView
+                    android:id="@+id/tv_monday"
+                    style="@style/DayButton"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/tv_tuesday"
+                    style="@style/DayButton"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/tv_wednesday"
+                    style="@style/DayButtonActive"
+                    android:text="W" />
+
+                <TextView
+                    android:id="@+id/tv_thursday"
+                    style="@style/DayButton"
+                    android:text="Th" />
+
+                <TextView
+                    android:id="@+id/tv_friday"
+                    style="@style/DayButton"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/tv_saturday"
+                    style="@style/DayButton"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/tv_sunday"
+                    style="@style/DayButton"
+                    android:text="Su" />
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/timing_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:rowCount="3"
+                android:columnCount="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/first_timing"
+                    android:padding="16dp"
+                    android:text="8:00am - 10:00am"
+                    style="@style/TimeSlotActive"/>
+
+                <TextView
+                    android:id="@+id/second_timing"
+                    android:padding="16dp"
+                    android:text="10:00am - 1:00pm"
+                    style="@style/TimeSlotInactive"/>
+
+                <TextView
+                    android:id="@+id/third_timing"
+                    android:padding="16dp"
+                    android:text="1:00pm - 4:00pm"
+                    style="@style/TimeSlotInactive"/>
+
+                <TextView
+                    android:id="@+id/forth_timing"
+                    android:padding="16dp"
+                    android:text="4:00pm - 7:00pm"
+                    style="@style/TimeSlotInactive"/>
+
+                <TextView
+                    android:id="@+id/fifth_timing"
+                    android:padding="16dp"
+                    android:text="7:00pm - 10:00pm"
+                    style="@style/TimeSlotInactive"/>
+            </GridLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnFooterBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/buttonBackBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/left_arrow_svg"/>
+
+            <Button
+                android:id="@+id/btnSubmitBusiness"
+                android:layout_width="140dp"
+                android:layout_height="53dp"
+                android:backgroundTint="#D5715B"
+                android:text="Signup"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
